@@ -115,7 +115,8 @@ public class Home extends javax.swing.JFrame{
         searchBar.setBackground(new java.awt.Color(28, 31, 38));
         searchBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         //homeLabel setting
-        javax.swing.ImageIcon originalBgIcon = new ImageIcon(getClass().getResource("../assets/bg.jpg"));
+        URL resource = getClass().getResource("/assets/bg.jpg");
+        javax.swing.ImageIcon originalBgIcon = new ImageIcon(resource);
         java.awt.Image resizedBgImage = originalBgIcon.getImage().getScaledInstance(1000, 660, Image.SCALE_SMOOTH);
         homeLabel.setIcon(new javax.swing.ImageIcon(resizedBgImage));
         //contentBox setting
